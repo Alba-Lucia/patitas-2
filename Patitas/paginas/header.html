@@ -1,0 +1,98 @@
+<head>
+  <title>Barra de Búsqueda con Icono de Lupa</title>
+  <style>
+    /* Estilo personalizado para el color gris del menú hamburguesa */
+    .navbar-toggler {
+      background-color: #6c757d; /* Color gris */
+    }
+    /* Estilo personalizado para el color gris del ícono del menú hamburguesa */
+    .navbar-toggler-icon {
+      color: #fff; /* Color blanco */
+    }
+    /* Estilo personalizado para la fuente "Karla" y el color "#FF3F8F" */
+    .font-family-karla {
+      font-family: "Karla", sans-serif;
+      color: #ff3f8f !important;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-md navbar-dark d-flex align-items-center"
+      >
+        <!-- Logo de la empresa a la izquierda -->
+        <a class="navbar-brand mr-auto font-family-karla fs-logo" href="index.html">Patitas</a>
+
+        <!-- Botón para mostrar el menú hamburguesa en dispositivos móviles -->
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú a la derecha -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="tienda.html"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="envios.html"
+                >Envios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="contacto.html"
+                >Contacto</a
+              >
+            </li>
+            <!-- Agrega más enlaces según las secciones de tu sitio web -->
+          </ul>
+
+          <!-- Barra de Búsqueda con Icono de Lupa -->
+          <form class="form-inline my-2 mx-5 ">
+            <div class="input-group">
+              <input
+                class="form-control rounded-sm"
+                type="search"
+                id="search-input"
+                placeholder="Buscar..."
+              />
+              <label class="form-label sr-only rounded-sm" for="search-input"
+                >Search</label
+              >
+              <button
+                class="btn text-dark rounded-sm"
+                id="search-button"
+                type="submit"
+                aria-label="Buscar"
+              >
+              <img src="img/search.png" alt="">
+              </button>
+            </div>
+          </form>
+            <div class="row justify-content-center">
+                    <div class="avatar rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; ">
+                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Avatar de Usuario" class="img-fluid rounded-circle" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+            </div>
+        </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+</body>
